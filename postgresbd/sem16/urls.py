@@ -1,8 +1,8 @@
-
+# Importacion de las vitas
 from django.urls import path
 from .views import cliente_list, venta_list, empleado_list, area_list
 
-
+#Creacion de las urls de cada tabla
 urlpatterns = [
     path('clientes/', cliente_list, name='cliente_list'),
     path('ventas/', venta_list, name='venta_list'),

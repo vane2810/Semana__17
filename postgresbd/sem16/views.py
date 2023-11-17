@@ -1,10 +1,10 @@
-# Importa la función render correctamente
+# Importacion de render
 from django.shortcuts import render
 
 # Asegúrate de tener las importaciones correctas para tus modelos
 from .models import Cliente, Venta, Empleado, Area
 
-# Define tus vistas
+# Definicion de las vistas de las tablas
 def cliente_list(request):
     clientes = Cliente.objects.all()
     return render(request, 'cliente_list.html', {'clientes': clientes})
